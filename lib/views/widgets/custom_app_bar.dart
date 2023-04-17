@@ -8,20 +8,22 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               'Notes',
               style: TextStyle(fontSize: 30),
             ),
-            Icon(Icons.search)
+            CustomSearchIcon()
           ],
         ),
       ],
     );
   }
 }
+
+
