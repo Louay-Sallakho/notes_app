@@ -6,9 +6,8 @@ class NoteItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Padding(
-      padding: const EdgeInsets.only(top: 16),
+      padding: const EdgeInsets.only(top: 12),
       child: Container(
         padding:
             const EdgeInsets.only(top: 24, right: 16, left: 16, bottom: 16),
@@ -33,8 +32,8 @@ class NoteItem extends StatelessWidget {
                         fontSize: 18, color: Colors.black.withOpacity(.6))),
               ),
               trailing: IconButton(
-                onPressed:(){},
-               icon:const Icon(FontAwesomeIcons.trash),
+                onPressed: () {},
+                icon: const Icon(FontAwesomeIcons.trash),
                 color: Colors.black,
               ),
             ),

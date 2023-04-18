@@ -1,4 +1,4 @@
-
+// ignore: file_names
 
 import 'package:flutter/cupertino.dart';
 
@@ -10,9 +10,11 @@ class NotesListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ListView.builder(itemBuilder: (context, index) {
-        return const NoteItem();
-      }),
+      child: ListView.builder(
+          padding:const  EdgeInsets.only(top: 10),
+          itemBuilder: (context, index) {
+            return const NoteItem();
+          }),
     );
   }
 }
